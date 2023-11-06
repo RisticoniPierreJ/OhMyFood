@@ -1,0 +1,18 @@
+/*************************** only contain the imports for the Patials files representing differents components ***************************/
+
+
+/******** main components ************/
+
+@import 'variables';
+@import 'mixins';
+@import 'placeholders';
+@import 'reset';
+@import 'components';
+
+
+
+/******** pages ************/
+
+@import 'pages/homepage';
+@import 'pages/menu';
+
