@@ -1,2 +1,13 @@
 /*************************** anything reusable such as buttons, navbars, cards etc. ***************************/
 
+.btn{
+    border: none;
+    border-radius: 25px;
+    padding: 16px 1px;
+    color: $txt-light;
+    font-size: 16px;
+    text-align: center;
+    width: 70%;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(352deg, $components-background-main -11%, $components-background-main-gradiant 123%);
+}

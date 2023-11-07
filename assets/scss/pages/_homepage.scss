@@ -1,0 +1,27 @@
+
+.pageContainer{
+    @extend %flex-column;
+}
+
+.infoGroup{
+    @extend %flex-column;
+    text-align: center;
+    gap: 27px;
+    // gap: 18px;
+    padding: 40px 30px 57px 30px;
+    background-color: $background-main;  
+}
+
+h1, h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h1{
+    padding: 0 17px;
+}
+
+p{
+    font-size: 1.125rem;
+}
+
