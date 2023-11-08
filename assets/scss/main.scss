@@ -3,11 +3,12 @@
 
 //******** main components ************//
 
-@import 'variables';
-@import 'mixins';
-@import 'placeholders';
-@import 'reset';
-@import 'components';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+@import 'base/reset';
+@import 'base/typography';
+@import 'components/components';
 
 
 
@@ -15,5 +16,5 @@
 
 @import 'pages/homepage';
 @import 'pages/menu';
-@import 'pages/header';
+@import 'layout/header';
 

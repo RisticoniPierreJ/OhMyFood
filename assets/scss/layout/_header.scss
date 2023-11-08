@@ -1,0 +1,41 @@
+.header{
+    @extend %flex-column;
+    width: 100%;
+
+
+    &__titre{
+        width: 100%;
+        font-family: Shrikhand;
+        font-size: 28px;
+        padding: 14px 89px 13px 89px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        z-index: 2;
+        
+    }
+        
+    &__form {
+        @extend %flex-row;
+        width: 100%;
+        padding: 15px 0;
+        background-color: $background-secondary;
+    }
+        
+    &__form input{
+        border: none;
+        background-color: $background-secondary;
+    }
+}
+    
+::placeholder {
+    color: $txt-search-input;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+    
+input:focus{
+    outline:none;
+}

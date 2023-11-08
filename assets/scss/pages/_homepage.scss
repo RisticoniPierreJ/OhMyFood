@@ -7,21 +7,58 @@
     @extend %flex-column;
     text-align: center;
     gap: 27px;
-    // gap: 18px;
     padding: 40px 30px 57px 30px;
     background-color: $background-main;  
+
+    &__titre{
+        padding: 0 17px;
+    }
 }
 
-h1, h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
+.fonctionnement{
+    @extend %flex-column;
+    gap: 25px;
+    padding: 50px 20px 70px 20px;
+    align-items: inherit;
+
+    &__table tbody{
+        @extend %flex-column;
+        gap: 25px;
+    }
+
+    &__table tr{
+        @extend %flex-row;
+        justify-content: flex-start;
+        background-color: $background-main;
+        width: 100%;
+        max-width: 322px;
+        padding: 28px 33px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        position: relative;
+    }
+
+    &__table td{
+        @extend %flex-row;
+        font-weight: bold;
+    }
+
+    &__table-numero{
+        background-color: $components-background-main;
+        color: $txt-light;
+        font-size: 0.875rem;
+        padding-top: 5px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        text-align: center;
+        position: absolute;
+        right: 309px;
+    }
+
+    &__table-icone{
+        padding-right: 27px;
+    }
 }
 
-h1{
-    padding: 0 17px;
-}
-
-p{
-    font-size: 1.125rem;
-}
 
