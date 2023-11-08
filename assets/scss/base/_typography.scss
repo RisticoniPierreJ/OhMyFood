@@ -1,8 +1,36 @@
+// ******** Global ******** //
 h1, h2 {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-p{
+h3, p{
     font-size: 1.125rem;
+}
+
+// ******** Particulier ******** //
+
+.fonctionnement{
+    &__table-numero{
+        font-size: 0.875rem;
+    }
+
+    &__table td{
+        font-weight: bold;
+    }
+}
+
+.restaurantsCards{
+    &__article-cardContent p{
+        font-size: 1.063rem;
+    }
+
+    &__article-cardContent h3{
+        font-weight: bold;
+    }
+
+    &__article-image p{
+        font-size: 0.875rem;
+        font-weight: bold;
+    }
 }

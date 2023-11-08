@@ -40,13 +40,11 @@
 
     &__table td{
         @extend %flex-row;
-        font-weight: bold;
     }
 
     &__table-numero{
         background-color: $components-background-main;
         color: $txt-light;
-        font-size: 0.875rem;
         padding-top: 5px;
         width: 24px;
         height: 24px;

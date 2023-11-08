@@ -1,11 +1,11 @@
-.header, .fonctionnement__table tbody, .fonctionnement, .infoGroup, .pageContainer {
+.header, .fonctionnement__table tbody, .fonctionnement, .infoGroup, .pageContainer, .restaurantsCards__article-cardContentTxt, .restaurantsCards__article, .restaurantsCards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.header__form, .fonctionnement__table td, .fonctionnement__table tr {
+.header__form, .fonctionnement__table td, .fonctionnement__table tr, .restaurantsCards__article-cardContent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,8 +81,26 @@ h1, h2 {
   font-weight: 700;
 }
 
-p {
+h3, p {
   font-size: 1.125rem;
+}
+
+.fonctionnement__table-numero {
+  font-size: 0.875rem;
+}
+.fonctionnement__table td {
+  font-weight: bold;
+}
+
+.restaurantsCards__article-cardContent p {
+  font-size: 1.063rem;
+}
+.restaurantsCards__article-cardContent h3 {
+  font-weight: bold;
+}
+.restaurantsCards__article-image p {
+  font-size: 0.875rem;
+  font-weight: bold;
 }
 
 /*************************** anything reusable such as buttons, navbars, cards etc. ***************************/
@@ -96,6 +114,49 @@ p {
   width: 70%;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
+}
+
+.restaurantsCards {
+  align-items: unset;
+  padding: 55px 17px 65px 17px;
+  gap: 18px;
+  background-color: #F6F6F6;
+}
+.restaurantsCards a {
+  width: 100%;
+}
+.restaurantsCards__article {
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.restaurantsCards__article-cardContent {
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px 25px 18px 13px;
+}
+.restaurantsCards__article-cardContentTxt {
+  align-items: unset;
+  gap: 5px;
+}
+.restaurantsCards__article img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 174px;
+  object-fit: cover;
+}
+.restaurantsCards__article-badge {
+  position: absolute;
+  left: 253px;
+  bottom: 138px;
+  color: #008766;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  padding: 7px 11px;
+}
+.restaurantsCards__article-image {
+  width: 100%;
+  position: relative;
 }
 
 .infoGroup {
@@ -126,13 +187,9 @@ p {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
 }
-.fonctionnement__table td {
-  font-weight: bold;
-}
 .fonctionnement__table-numero {
   background-color: #9356DC;
   color: #FFFFFF;
-  font-size: 0.875rem;
   padding-top: 5px;
   width: 24px;
   height: 24px;

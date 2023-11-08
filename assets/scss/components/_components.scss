@@ -11,3 +11,60 @@
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     background: linear-gradient(352deg, $components-background-main -11%, $components-background-main-gradiant 123%);
 }
+
+.restaurantsCards{
+    @extend %flex-column;
+    align-items: unset;
+    padding: 55px 17px 65px 17px;
+    gap: 18px;
+    background-color: $background-main;
+
+    a{
+        width: 100%;
+    }
+
+    &__article{
+        @extend %flex-column;
+        border-radius: 15px;
+        width: 100%;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+        
+        &-cardContent{
+            @extend %flex-row;
+            justify-content: space-between;
+            width: 100%;    
+            padding: 18px 25px 18px 13px;
+        }
+        
+        &-cardContentTxt{
+            @extend %flex-column;
+            align-items: unset;
+            gap: 5px;
+        }
+        
+        & img{
+            border-radius: 15px 15px 0 0;
+            width: 100%;
+            height: 174px;
+            object-fit: cover;
+        }
+
+        &-badge{
+            position: absolute;
+            left: 253px;
+            bottom: 138px;
+            color: $txt-custom;
+            background-color: $components-background-secondary;
+            border-radius: 2px;
+            padding: 7px 11px;
+        }
+
+        &-image{
+            width: 100%;
+            position: relative;
+        }
+    }
+
+}
+
+
