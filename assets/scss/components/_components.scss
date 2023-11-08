@@ -3,20 +3,19 @@
 .btn{
     border: none;
     border-radius: 25px;
-    padding: 16px 1px;
-    color: $txt-light;
-    font-size: 1rem;
-    text-align: center;
     width: 70%;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 16px 1px;
+    text-align: center;
     background: linear-gradient(352deg, $components-background-main -11%, $components-background-main-gradiant 123%);
+    color: $txt-light;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .restaurantsCards{
     @extend %flex-column;
     align-items: unset;
-    padding: 55px 17px 65px 17px;
     gap: 18px;
+    padding: 55px 17px 65px 17px;
     background-color: $background-main;
 
     a{
@@ -25,8 +24,8 @@
 
     &__article{
         @extend %flex-column;
-        border-radius: 15px;
         width: 100%;
+        border-radius: 15px;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
         
         &-cardContent{
@@ -50,13 +49,13 @@
         }
 
         &-badge{
+            padding: 7px 11px;
+            background-color: $components-background-secondary;
+            color: $txt-custom;
+            border-radius: 2px;
             position: absolute;
             left: 253px;
             bottom: 138px;
-            color: $txt-custom;
-            background-color: $components-background-secondary;
-            border-radius: 2px;
-            padding: 7px 11px;
         }
 
         &-image{

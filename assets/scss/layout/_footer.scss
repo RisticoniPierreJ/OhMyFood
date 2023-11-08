@@ -1,0 +1,18 @@
+.footer{
+    @extend %flex-column;
+    align-items: unset;
+    width: 100%;
+    gap: 16px;
+    padding: 22px 25px;
+    background-color: $background-dark;
+
+    & ul{
+        @extend %flex-column;
+        align-items: unset;
+        gap: 7px;
+    }
+
+    & svg{
+        margin-right: 5px;
+    }
+}

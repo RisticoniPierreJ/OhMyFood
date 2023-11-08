@@ -1,4 +1,4 @@
-.header, .fonctionnement__table tbody, .fonctionnement, .infoGroup, .pageContainer, .restaurantsCards__article-cardContentTxt, .restaurantsCards__article, .restaurantsCards {
+.footer ul, .footer, .header, .fonctionnement__table tbody, .fonctionnement, .infoGroup, .pageContainer, .restaurantsCards__article-cardContentTxt, .restaurantsCards__article, .restaurantsCards {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,13 +76,28 @@ a {
   font-family: Roboto;
 }
 
-h1, h2 {
+h1 {
+  font-family: Shrikhand;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+h2 {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 h3, p {
   font-size: 1.125rem;
+}
+
+::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn {
+  font-size: 1rem;
 }
 
 .fonctionnement__table-numero {
@@ -103,31 +118,41 @@ h3, p {
   font-weight: bold;
 }
 
+.footer__title {
+  color: #FFFFFF;
+  font-family: Shrikhand;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.footer ul, .footer li {
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
 /*************************** anything reusable such as buttons, navbars, cards etc. ***************************/
 .btn {
   border: none;
   border-radius: 25px;
-  padding: 16px 1px;
-  color: #FFFFFF;
-  font-size: 1rem;
-  text-align: center;
   width: 70%;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px 1px;
+  text-align: center;
   background: linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
+  color: #FFFFFF;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .restaurantsCards {
   align-items: unset;
-  padding: 55px 17px 65px 17px;
   gap: 18px;
+  padding: 55px 17px 65px 17px;
   background-color: #F6F6F6;
 }
 .restaurantsCards a {
   width: 100%;
 }
 .restaurantsCards__article {
-  border-radius: 15px;
   width: 100%;
+  border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .restaurantsCards__article-cardContent {
@@ -146,13 +171,13 @@ h3, p {
   object-fit: cover;
 }
 .restaurantsCards__article-badge {
+  padding: 7px 11px;
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 2px;
   position: absolute;
   left: 253px;
   bottom: 138px;
-  color: #008766;
-  background-color: #99E2D0;
-  border-radius: 2px;
-  padding: 7px 11px;
 }
 .restaurantsCards__article-image {
   width: 100%;
@@ -170,31 +195,31 @@ h3, p {
 }
 
 .fonctionnement {
+  align-items: inherit;
   gap: 25px;
   padding: 50px 20px 70px 20px;
-  align-items: inherit;
 }
 .fonctionnement__table tbody {
   gap: 25px;
 }
 .fonctionnement__table tr {
   justify-content: flex-start;
-  background-color: #F6F6F6;
   width: 100%;
   max-width: 322px;
   padding: 28px 33px;
   border-radius: 20px;
+  background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
 }
 .fonctionnement__table-numero {
-  background-color: #9356DC;
-  color: #FFFFFF;
+  text-align: center;
   padding-top: 5px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  text-align: center;
+  background-color: #9356DC;
+  color: #FFFFFF;
   position: absolute;
   right: 309px;
 }
@@ -207,11 +232,9 @@ h3, p {
 }
 .header__titre {
   width: 100%;
-  font-family: Shrikhand;
-  font-size: 28px;
   padding: 14px 89px 13px 89px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   z-index: 2;
 }
 .header__form {
@@ -227,14 +250,25 @@ h3, p {
 ::placeholder {
   color: #353535;
   text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
 }
 
 input:focus {
   outline: none;
+}
+
+.footer {
+  align-items: unset;
+  width: 100%;
+  gap: 16px;
+  padding: 22px 25px;
+  background-color: #353535;
+}
+.footer ul {
+  align-items: unset;
+  gap: 7px;
+}
+.footer svg {
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

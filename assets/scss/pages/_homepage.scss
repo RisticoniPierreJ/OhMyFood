@@ -17,9 +17,9 @@
 
 .fonctionnement{
     @extend %flex-column;
+    align-items: inherit;
     gap: 25px;
     padding: 50px 20px 70px 20px;
-    align-items: inherit;
 
     &__table tbody{
         @extend %flex-column;
@@ -29,11 +29,11 @@
     &__table tr{
         @extend %flex-row;
         justify-content: flex-start;
-        background-color: $background-main;
         width: 100%;
         max-width: 322px;
         padding: 28px 33px;
         border-radius: 20px;
+        background-color: $background-main;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
         position: relative;
     }
@@ -43,13 +43,13 @@
     }
 
     &__table-numero{
-        background-color: $components-background-main;
-        color: $txt-light;
+        text-align: center;
         padding-top: 5px;
         width: 24px;
         height: 24px;
         border-radius: 50%;
-        text-align: center;
+        background-color: $components-background-main;
+        color: $txt-light;
         position: absolute;
         right: 309px;
     }

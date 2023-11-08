@@ -1,5 +1,11 @@
 // ******** Global ******** //
-h1, h2 {
+h1{
+    font-family: Shrikhand;
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+h2{
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -9,6 +15,15 @@ h3, p{
 }
 
 // ******** Particulier ******** //
+
+::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn{
+    font-size: 1rem;
+}
 
 .fonctionnement{
     &__table-numero{
@@ -32,5 +47,20 @@ h3, p{
     &__article-image p{
         font-size: 0.875rem;
         font-weight: bold;
+    }
+}
+
+.footer{
+
+    &__title{
+        color: $txt-light;
+        font-family: Shrikhand;
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+
+    & ul, li{
+        color: $txt-light;
+        font-size: 1rem;
     }
 }
