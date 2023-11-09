@@ -1,6 +1,7 @@
 
 .pageContainer{
     @extend %flex-column;
+
 }
 
 .infoGroup{
@@ -13,6 +14,10 @@
     &__titre{
         padding: 0 17px;
     }
+
+    @media (min-width: 1024px) {
+        padding: 30px 0 30px 0;
+    }
 }
 
 .fonctionnement{
@@ -20,10 +25,24 @@
     align-items: inherit;
     gap: 25px;
     padding: 50px 20px 70px 20px;
+    
+    @media (min-width: 1024px) {
+        padding: 50px 12.5%;
+    }
+
+    &__table{
+        @media (min-width: 1024px) {
+            width: 100%;
+        }
+    }
 
     &__table tbody{
         @extend %flex-column;
         gap: 25px;
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+        }
     }
 
     &__table tr{
@@ -35,7 +54,6 @@
         border-radius: 20px;
         background-color: $background-main;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-        position: relative;
     }
 
     &__table td{
@@ -50,13 +68,13 @@
         border-radius: 50%;
         background-color: $components-background-main;
         color: $txt-light;
-        position: absolute;
-        right: 309px;
+        transform: translateX(-180%);
     }
 
     &__table-icone{
         padding-right: 27px;
     }
+
 }
 
 

@@ -1,4 +1,4 @@
-.footer ul, .footer, .header, .menuRestaurant__components, .menuRestaurant, .fonctionnement__table tbody, .fonctionnement, .infoGroup, .pageContainer, .restaurantsCards__article-cardContentTxt, .restaurantsCards__article, .restaurantsCards {
+.footer ul, .footer, .header, .menuRestaurant__components-plateCardText, .menuRestaurant__components, .menuRestaurant, .fonctionnement__table tbody, .fonctionnement, .infoGroup, .pageContainer, .restaurantsCards__article-cardContentTxt, .restaurantsCards__article, .restaurantsCards__allCards, .restaurantsCards {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,6 +100,23 @@ h3, p {
   font-size: 1rem;
 }
 
+.footer__title {
+  color: #FFFFFF;
+  font-family: Shrikhand;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.footer ul, .footer li {
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .infoGroup__titre {
+    font-size: 2.5rem;
+  }
+}
+
 .fonctionnement__table-numero {
   font-size: 0.875rem;
 }
@@ -113,20 +130,9 @@ h3, p {
 .restaurantsCards__article-cardContent h3 {
   font-weight: bold;
 }
-.restaurantsCards__article-image p {
+.restaurantsCards__article-badge {
   font-size: 0.875rem;
-  font-weight: bold;
-}
-
-.footer__title {
-  color: #FFFFFF;
-  font-family: Shrikhand;
-  font-size: 1.125rem;
-  font-weight: 400;
-}
-.footer ul, .footer li {
-  color: #FFFFFF;
-  font-size: 1rem;
+  font-weight: 700;
 }
 
 .menuRestaurant__titre {
@@ -172,10 +178,26 @@ h3, p {
   padding: 55px 17px 65px 17px;
   background-color: #F6F6F6;
 }
-.restaurantsCards a {
-  width: 100%;
+@media (min-width: 1024px) {
+  .restaurantsCards {
+    gap: 28px;
+    padding: 30px 12.5%;
+  }
+}
+.restaurantsCards__allCards {
+  align-items: unset;
+  gap: 18px;
+}
+@media (min-width: 1024px) {
+  .restaurantsCards__allCards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-column-gap: 9.25%;
+    grid-row-gap: 50px;
+  }
 }
 .restaurantsCards__article {
+  align-items: end;
   width: 100%;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
@@ -196,17 +218,15 @@ h3, p {
   object-fit: cover;
 }
 .restaurantsCards__article-badge {
-  padding: 7px 11px;
+  padding: 8px 9px 6px 9px;
+  border-radius: 2px;
+  width: 80px;
+  height: 30px;
+  text-align: center;
   background-color: #99E2D0;
   color: #008766;
-  border-radius: 2px;
   position: absolute;
-  left: 253px;
-  bottom: 138px;
-}
-.restaurantsCards__article-image {
-  width: 100%;
-  position: relative;
+  transform: translate(-15%, -330%);
 }
 
 .infoGroup {
@@ -218,14 +238,34 @@ h3, p {
 .infoGroup__titre {
   padding: 0 17px;
 }
+@media (min-width: 1024px) {
+  .infoGroup {
+    padding: 30px 0 30px 0;
+  }
+}
 
 .fonctionnement {
   align-items: inherit;
   gap: 25px;
   padding: 50px 20px 70px 20px;
 }
+@media (min-width: 1024px) {
+  .fonctionnement {
+    padding: 50px 12.5%;
+  }
+}
+@media (min-width: 1024px) {
+  .fonctionnement__table {
+    width: 100%;
+  }
+}
 .fonctionnement__table tbody {
   gap: 25px;
+}
+@media (min-width: 1024px) {
+  .fonctionnement__table tbody {
+    flex-direction: row;
+  }
 }
 .fonctionnement__table tr {
   justify-content: flex-start;
@@ -235,7 +275,6 @@ h3, p {
   border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  position: relative;
 }
 .fonctionnement__table-numero {
   text-align: center;
@@ -245,8 +284,7 @@ h3, p {
   border-radius: 50%;
   background-color: #9356DC;
   color: #FFFFFF;
-  position: absolute;
-  right: 309px;
+  transform: translateX(-180%);
 }
 .fonctionnement__table-icone {
   padding-right: 27px;
@@ -256,24 +294,45 @@ h3, p {
   align-items: unset;
 }
 
+@media (min-width: 1024px) {
+  .mainMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .menuTopImage {
   height: 275px;
   width: 100%;
   position: absolute;
+  object-fit: cover;
 }
 
 .menuRestaurant {
   border-radius: 40px 40px 0 0;
   gap: 40px;
   padding: 30px 13px 40px 13px;
-  background-color: white;
+  background-color: #F6F6F6;
   position: relative;
   top: 220px;
+}
+@media (min-width: 1024px) {
+  .menuRestaurant {
+    width: 74%;
+    padding: 50px 215px 40px 215px;
+  }
 }
 .menuRestaurant__top {
   justify-content: space-between;
   width: 100%;
   padding-right: 25px;
+}
+@media (min-width: 1024px) {
+  .menuRestaurant__top {
+    justify-content: center;
+    gap: 24px;
+  }
 }
 .menuRestaurant__components {
   align-items: unset;
@@ -287,6 +346,10 @@ h3, p {
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
+.menuRestaurant__components-plateCardText {
+  align-items: unset;
+  gap: 5px;
+}
 .menuRestaurant__components-titre:after {
   content: "";
   display: block;
@@ -294,16 +357,26 @@ h3, p {
   padding-top: 9px;
   border-bottom: 3px solid #99E2D0;
 }
+@media (min-width: 1024px) {
+  .menuRestaurant__components-titre:after {
+    width: 6%;
+  }
+}
 
 .header {
   width: 100%;
 }
 .header__titre {
   width: 100%;
-  padding: 14px 89px 13px 89px;
+  padding: 14px 89px;
   text-align: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   z-index: 2;
+}
+@media (min-width: 1024px) {
+  .header__titre {
+    padding: 30px 0;
+  }
 }
 .header__form {
   width: 100%;
@@ -340,12 +413,36 @@ input:focus {
   padding: 22px 25px;
   background-color: #353535;
 }
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row-reverse;
+    padding: 55px 25px 30px 25px;
+    justify-content: unset;
+  }
+}
 .footer ul {
   align-items: unset;
   gap: 7px;
 }
+@media (min-width: 1024px) {
+  .footer ul {
+    flex-direction: row;
+  }
+}
 .footer svg {
   margin-right: 5px;
+}
+@media (min-width: 1024px) {
+  .footer__title {
+    padding-right: 40px;
+    padding-left: 70px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer li {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
 }
 
 .footerMenu {
