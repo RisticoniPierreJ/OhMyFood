@@ -14,7 +14,7 @@ h3, p{
     font-size: 1.125rem;
 }
 
-// ******** Particulier ******** //
+// ***************** Cas Particulier ***************** //
 
 ::placeholder {
     font-size: 16px;
@@ -64,3 +64,39 @@ h3, p{
         font-size: 1rem;
     }
 }
+
+// ******* Page Restaurants ******* //
+
+.menuRestaurant{
+
+    &__titre{
+        font-family: Shrikhand;
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    &__components{
+        &-titre{
+            font-size: 1rem;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        &-plateCard h4{
+            font-size: 1.125rem;
+            font-weight: bold;
+        
+        }
+
+        &-plateCard p{
+            font-size: 0.938rem;
+        }   
+
+        &-plateCardPrice{
+            color: $txt-price;
+            font-weight: bold;
+
+        }
+    }   
+}
+

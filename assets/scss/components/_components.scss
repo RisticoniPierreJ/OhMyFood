@@ -3,12 +3,17 @@
 .btn{
     border: none;
     border-radius: 25px;
-    width: 70%;
-    padding: 16px 1px;
+    // width: 70%;
+    padding: 16px 18px;
     text-align: center;
     background: linear-gradient(352deg, $components-background-main -11%, $components-background-main-gradiant 123%);
     color: $txt-light;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btnMenu{
+    padding: 16px 50px;
+
 }
 
 .restaurantsCards{
