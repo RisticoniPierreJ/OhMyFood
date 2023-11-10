@@ -19,7 +19,12 @@ $txt-light : #FFFFFF;
 $txt-dark : #000000;
 
 // Gradiants 
-$components-background-main-gradiant : #FF79DA;
+
+$components-gradient-light: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%),
+                            linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
+                            
+$components-gradient-dark: linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
+
 
 
 //********** Utils Position Dimension **********//

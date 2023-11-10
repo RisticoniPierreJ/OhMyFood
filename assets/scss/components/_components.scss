@@ -1,19 +1,43 @@
 /*************************** anything reusable such as buttons, navbars, cards etc. ***************************/
 
-.btn{
+.btn {
+    position: relative;
+    z-index: 1;
     border: none;
     border-radius: 25px;
     padding: 16px 18px;
     text-align: center;
-    background: linear-gradient(352deg, $components-background-main -11%, $components-background-main-gradiant 123%);
     color: $txt-light;
+    background: $components-gradient-dark;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+    &:hover {
+        &::after {
+            opacity: 1;
+    }
 }
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        border-radius: 25px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 300ms;
+        background: $components-gradient-light;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+    }
+}
+
 
 .btnMenu{
     padding: 16px 50px;
-
 }
+
+
 
 .restaurants{
     @extend %flex-column;
