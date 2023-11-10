@@ -2,7 +2,7 @@
     @extend %flex-column;
     width: 100%;
 
-    &__titre{
+    &__title{
         width: 100%;
         padding: 14px 89px;
         text-align: center;
@@ -39,12 +39,16 @@ input:focus{
 .headerMenu{
     @extend %flex-row;
     justify-content: flex-start;
-    gap: 42px;
+    padding: 14px 17px; 
 
-    padding: 14px 89px 13px 17px;
+    @media (min-width: 1024px) {
+        padding: 30px 17px;
+    }
 
-    &__titre{
-        padding: 0 19px 0 16px;
+    &__title{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 }

@@ -15,7 +15,7 @@
 
 }
 
-.restaurantsCards{
+.restaurants{
     @extend %flex-column;
     align-items: unset;
     gap: 18px;
@@ -27,7 +27,7 @@
         padding: 30px 12.5%;
     }
 
-    &__allCards{
+    &__Cards{
         @extend %flex-column;
         align-items: unset;
         gap: 18px;

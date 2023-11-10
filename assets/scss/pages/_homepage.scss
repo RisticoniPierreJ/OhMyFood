@@ -11,7 +11,7 @@
     padding: 40px 30px 57px 30px;
     background-color: $background-main;  
 
-    &__titre{
+    &__title{
         padding: 0 17px;
     }
 
@@ -60,7 +60,7 @@
         @extend %flex-row;
     }
 
-    &__table-numero{
+    &__table-number{
         text-align: center;
         padding-top: 5px;
         width: 24px;
@@ -71,7 +71,7 @@
         transform: translateX(-180%);
     }
 
-    &__table-icone{
+    &__table-icon{
         padding-right: 27px;
     }
 
