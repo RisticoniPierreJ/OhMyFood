@@ -78,6 +78,9 @@ a {
 
 *, ::before, ::after {
   box-sizing: border-box;
+}
+
+* {
   font-family: Roboto;
 }
 
@@ -112,6 +115,7 @@ h3, p {
   font-weight: 400;
 }
 .footer ul, .footer li {
+  font-family: Roboto;
   color: #FFFFFF;
   font-size: 1rem;
 }
@@ -224,6 +228,7 @@ h3, p {
   align-items: end;
   width: 100%;
   border-radius: 15px;
+  background-color: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .restaurants__article-cardContent {
@@ -289,6 +294,7 @@ label input:checked ~ svg path {
   align-items: inherit;
   gap: 25px;
   padding: 50px 20px 70px 20px;
+  background-color: white;
 }
 @media (min-width: 1024px) {
   .fonctionnement {
@@ -306,13 +312,14 @@ label input:checked ~ svg path {
 @media (min-width: 1024px) {
   .fonctionnement__table tbody {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 .fonctionnement__table tr {
   justify-content: flex-start;
   width: 100%;
   max-width: 322px;
-  padding: 28px 33px;
+  padding: 24px 33px;
   border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -396,6 +403,7 @@ label input:checked ~ svg path {
 .menu__item-plateCard {
   align-items: unset;
   border-radius: 15px;
+  background-color: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
@@ -407,10 +415,12 @@ label input:checked ~ svg path {
   justify-content: space-between;
   width: 100%;
   padding: 15px;
+  overflow: hidden;
 }
 .menu__item-plateCardDescription {
   align-items: unset;
   gap: 5px;
+  width: 100%;
   overflow: hidden;
 }
 .menu__item-plateCardDescription p, .menu__item-plateCardDescription h4 {
@@ -421,11 +431,13 @@ label input:checked ~ svg path {
 .menu__item-plateCardPrice {
   display: flex;
   align-items: flex-end;
+  padding-left: 7px;
   transition: transform 230ms ease-in-out;
 }
 .menu__item-checkBtn {
-  width: 65px;
-  margin-right: -65px;
+  flex-shrink: 0;
+  width: 59px;
+  margin-right: -59px;
   background: #99E2D0;
   transition: margin-right 230ms ease-in-out;
 }
@@ -437,6 +449,7 @@ label input:checked ~ svg path {
   width: 100%;
   padding: 14px 89px;
   text-align: center;
+  background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   z-index: 2;
 }

@@ -1,4 +1,8 @@
 // ******** Global ******** //
+*{
+    font-family: Roboto;
+}
+
 h1{
     font-family: Shrikhand;
     font-size: 1.875rem;
@@ -26,7 +30,6 @@ h3, p{
 }
 
 .footer{
-
     &__title{
         color: $txt-light;
         font-family: Shrikhand;
@@ -35,6 +38,7 @@ h3, p{
     }
 
     & ul, li{
+        font-family: Roboto;
         color: $txt-light;
         font-size: 1rem;
     }
@@ -78,21 +82,16 @@ h3, p{
 // ******* Page Restaurants ******* //
 
 .menu{
-
     &__title{
         font-family: Shrikhand;
         font-size: 28px;
         font-weight: 400;
-
     }
     
-    &__category{
-
-        &-title{
-            font-size: 1rem;
-            font-weight: 300;
-            text-transform: uppercase;
-        }       
+    &__category-title{
+        font-size: 1rem;
+        font-weight: 300;
+        text-transform: uppercase;              
     }
     
     &__item{
