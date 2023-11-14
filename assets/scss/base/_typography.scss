@@ -77,20 +77,26 @@ h3, p{
 
 // ******* Page Restaurants ******* //
 
-.menuRestaurant{
+.menu{
+
     &__title{
         font-family: Shrikhand;
         font-size: 28px;
         font-weight: 400;
-    }
 
-    &__components{
+    }
+    
+    &__category{
+
         &-title{
             font-size: 1rem;
             font-weight: 300;
             text-transform: uppercase;
-        }
-
+        }       
+    }
+    
+    &__item{
+        
         &-plateCard h4{
             font-size: 1.125rem;
             font-weight: bold;
@@ -103,8 +109,6 @@ h3, p{
         &-plateCardPrice{
             color: $txt-price;
             font-weight: bold;
-            
-
         }
     }   
 }

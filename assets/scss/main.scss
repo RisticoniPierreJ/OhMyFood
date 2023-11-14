@@ -1,7 +1,7 @@
-//*************************** only contain the imports for the Patials files representing differents components ***************************//
+//*************************** only contain the imports for the Patials files representing differents item ***************************//
 
 
-//******** main components ************//
+//******** main item ************//
 
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
@@ -9,6 +9,7 @@
 @import 'base/reset';
 @import 'base/typography';
 @import 'components/components';
+@import 'components/heartCheck';
 
 
 

@@ -8,7 +8,7 @@
     padding: 16px 18px;
     text-align: center;
     color: $txt-light;
-    background: $components-gradient-dark;
+    background: $item-gradient-dark;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 
     &:hover {
@@ -27,7 +27,7 @@
         left: 0;
         opacity: 0;
         transition: opacity 300ms;
-        background: $components-gradient-light;
+        background: $item-gradient-light;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
     }
 }
@@ -97,7 +97,7 @@
             width: 80px;
             height: 30px;
             text-align: center;
-            background-color: $secondary-components-background;
+            background-color: $secondary-item-background;
             color: $txt-custom;
             position: absolute;
             transform: translate(-15%,-330%);

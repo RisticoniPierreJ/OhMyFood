@@ -1,0 +1,17 @@
+.icon-vgradient {
+    fill: none;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+label input:checked ~ svg{
+    fill: url(#Heart-gradient);
+
+    path{
+        stroke: none;
+    }
+}

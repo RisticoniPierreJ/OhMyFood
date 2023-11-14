@@ -12,6 +12,14 @@
 </head>
 
 <body>
+
+    <svg aria-hidden="true" focusable="false" style="width:0;height:0;position:absolute;">
+        <linearGradient id="Heart-gradient" x2="0" y2="1">
+          <stop offset="0%" stop-color="var(--color-stop-1)" />
+          <stop offset="100%" stop-color="var(--color-stop-2)" />
+        </linearGradient>
+    </svg>
+
     <div class="pageContainer">
         <header class="headerMenu">
             <a href="../Index.html">
@@ -25,103 +33,157 @@
         <main class="mainMenu">
             <img class="menuTopImage" src="../assets/image/restaurants/a_la_francaise.jpg" alt="Photo À la française">
             
-            <section class="menuRestaurant">
-                <div class="menuRestaurant__top">
-                    <h2 class="menuRestaurant__title">À la française</h2>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                        <path d="M12.2206 2.40576L12.2208 2.40551C14.2226 0.15233 17.4035 -0.169451 19.5243 1.80187C22.0186 4.1243 22.156 8.32326 19.9123 10.8492L19.9122 10.8493L11.5978 20.2148C11.2596 20.5956 10.7372 20.5956 10.399 20.2148L2.0848 10.8495C-0.15494 8.32357 -0.0175439 4.1245 2.47664 1.80201C4.59762 -0.169649 7.78271 0.152585 9.77992 2.40514L9.78047 2.40576L10.627 3.35732L11.0005 3.77727L11.3741 3.35732L12.2206 2.40576Z" stroke="#101010"/>
-                    </svg>
+            <section class="menu">
+                <div class="menu__top">
+                    <h2 class="menu__title">À la française</h2>
+                    <label>
+                        <input type="checkbox" id="heart" name="heart">
+                        <svg class="icon-vgradient" xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 23 21" >
+                            <path d="M20.3647 1.43666C18.01 -0.752399 14.5081 -0.358649 12.3468 2.07416L11.5003 3.02573L10.6538 2.07416C8.49677 -0.358649 4.99052 -0.752399 2.63583 1.43666C-0.0626076 3.94916 -0.204405 8.45854 2.21044 11.182L10.5249 20.5476C11.062 21.1523 11.9343 21.1523 12.4714 20.5476L20.7858 11.182C23.205 8.45854 23.0632 3.94916 20.3647 1.43666Z"  stroke="#101010"/>
+                        </svg>
+                    </label>
                 </div>
 
-                <div class="menuRestaurant__components">
-                    <h3 class="menuRestaurant__components-title">entrées</h3>
-                    <a>
-                        <article class="menuRestaurant__components-plateCard">
-                            <div class="menuRestaurant__components-plateCardText">
+                <div class="menu__category">
+                    <h3 class="menu__category-title">entrées</h3>
+                    <article class="menu__item-plateCard">
+                        <div class="menu__item-plateCardContent">
+                            <div class="menu__item-plateCardDescription">
                                 <h4>Tartare de poulpe acidulé</h4>
                                 <p>Aux zestes d'orange</p>
-                            </div>
-                            <p class="menuRestaurant__components-plateCardPrice">25€</p>
-                        </article>
-                    </a>
-                    <a>
-                        <article class="menuRestaurant__components-plateCard">
-                            <div class="menuRestaurant__components-plateCardText">
+                            </div>            
+                            <p class="menu__item-plateCardPrice">25€</p>
+                        </div>  
+                        <div class="menu__item-checkBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                            </svg>
+                        </div> 
+                    </article>
+                    
+                    <article class="menu__item-plateCard">
+                        <div class="menu__item-plateCardContent">
+                            <div class="menu__item-plateCardDescription">
                                 <h4>Velouté de légumes d'antan</h4>
                                 <p>Carotte, panais, topinambour</p>
-                            </div>
-                            <p class="menuRestaurant__components-plateCardPrice">35€</p>
-                        </article>
-                    </a>
-                    <a>
-                        <article class="menuRestaurant__components-plateCard">
-                            <div class="menuRestaurant__components-plateCardText">
+                            </div>            
+                            <p class="menu__item-plateCardPrice">35€</p>
+                        </div>  
+                        <div class="menu__item-checkBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                            </svg>
+                        </div> 
+                    </article>
+                    
+                    <article class="menu__item-plateCard">
+                        <div class="menu__item-plateCardContent">
+                            <div class="menu__item-plateCardDescription">
                                 <h4>Soupe à l'oignon</h4>
                                 <p>Revisitée</p>
-                            </div>
-                            <p class="menuRestaurant__components-plateCardPrice">20€</p>
-                        </article>
-                    </a>
+                            </div>            
+                            <p class="menu__item-plateCardPrice">20€</p>
+                        </div>  
+                        <div class="menu__item-checkBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                            </svg>
+                        </div> 
+                    </article>
                 </div>
-                <div class="menuRestaurant__components">
-                    <h3 class="menuRestaurant__components-title">plats</h3>
-                    <a>
-                        <article class="menuRestaurant__components-plateCard">
-                            <div class="menuRestaurant__components-plateCardText">
+                <div class="menu__category">
+                    <h3 class="menu__category-title">plats</h3>
+                    <article class="menu__item-plateCard">
+                        <div class="menu__item-plateCardContent">
+                            <div class="menu__item-plateCardDescription">
                                 <h4>Coquilles Saint-Jacques</h4>
                                 <p>Accompagnées d'une purée de panais</p>
-                            </div>
-                            <p class="menuRestaurant__components-plateCardPrice">40€</p>
-                        </article>
-                    </a>
-                    <a>
-                        <article class="menuRestaurant__components-plateCard">
-                            <div class="menuRestaurant__components-plateCardText">
+                            </div>            
+                            <p class="menu__item-plateCardPrice">40€</p>
+                        </div>  
+                        <div class="menu__item-checkBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                            </svg>
+                        </div> 
+                    </article>
+                    
+                    <article class="menu__item-plateCard">
+                        <div class="menu__item-plateCardContent">
+                            <div class="menu__item-plateCardDescription">
                                 <h4>Magret de canard</h4>
                                 <p>Et parmentier de pommes de terre</p>
-                            </div>
-                            <p class="menuRestaurant__components-plateCardPrice">35€</p>
-                        </article>
-                    </a>
-                    <a>
-                        <article class="menuRestaurant__components-plateCard">
-                            <div class="menuRestaurant__components-plateCardText">
+                            </div>            
+                            <p class="menu__item-plateCardPrice">35€</p>
+                        </div>  
+                        <div class="menu__item-checkBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                            </svg>
+                        </div> 
+                    </article>
+                    
+                    <article class="menu__item-plateCard">
+                        <div class="menu__item-plateCardContent">
+                            <div class="menu__item-plateCardDescription">
                                 <h4>Pigeonneau d’Ille-et-Vilaine</h4>
                                 <p>Sur son lit de gnocchis aux légumes</p>
-                            </div>
-                            <p class="menuRestaurant__components-plateCardPrice">44€</p>
-                        </article>
-                    </a>
+                            </div>            
+                            <p class="menu__item-plateCardPrice">44€</p>
+                        </div>  
+                        <div class="menu__item-checkBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                            </svg>
+                        </div> 
+                    </article>
                 </div>
-                <div class="menuRestaurant__components">
-                    <h3 class="menuRestaurant__components-title">desserts</h3>
-                    <a>
-                        <article class="menuRestaurant__components-plateCard">
-                            <div class="menuRestaurant__components-plateCardText">
+                <div class="menu__category">
+                    <h3 class="menu__category-title">desserts</h3>
+                    <article class="menu__item-plateCard">
+                        <div class="menu__item-plateCardContent">
+                            <div class="menu__item-plateCardDescription">
                                 <h4>Pétales de violettes glacés</h4>
                                 <p>Et purée de noisettes</p>
-                            </div>
-                            <p class="menuRestaurant__components-plateCardPrice">18€</p>
-                        </article>
-                    </a>
-                    <a>
-                        <article class="menuRestaurant__components-plateCard">
-                            <div class="menuRestaurant__components-plateCardText">
+                            </div>            
+                            <p class="menu__item-plateCardPrice">18€</p>
+                        </div>  
+                        <div class="menu__item-checkBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                            </svg>
+                        </div> 
+                    </article>
+                    
+                    <article class="menu__item-plateCard">
+                        <div class="menu__item-plateCardContent">
+                            <div class="menu__item-plateCardDescription">
                                 <h4>Fondant au chocolat</h4>
                                 <p>Revisité</p>
-                            </div>
-                            <p class="menuRestaurant__components-plateCardPrice">22€</p>
-                        </article>
-                    </a>
-                    <a>
-                        <article class="menuRestaurant__components-plateCard">
-                            <div class="menuRestaurant__components-plateCardText">
+                            </div>            
+                            <p class="menu__item-plateCardPrice">22€</p>
+                        </div>  
+                        <div class="menu__item-checkBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                            </svg>
+                        </div> 
+                    </article>
+                    
+                    <article class="menu__item-plateCard">
+                        <div class="menu__item-plateCardContent">
+                            <div class="menu__item-plateCardDescription">
                                 <h4>Millefeuille croustillant</h4>
                                 <p>Myrtilles et pâte d’amande</p>
-                            </div>
-                            <p class="menuRestaurant__components-plateCardPrice">23€</p>
-                        </article>
-                    </a>
+                            </div>            
+                            <p class="menu__item-plateCardPrice">23€</p>
+                        </div>  
+                        <div class="menu__item-checkBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                            </svg>
+                        </div> 
+                    </article>
                 </div>
                 <!-- <input class="btn btnMenu" type="button" name="BouttonCommander" value="Commander"> -->
                 <button class="btn btnMenu">Commander</button>

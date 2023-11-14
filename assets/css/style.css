@@ -1,11 +1,16 @@
-.footer ul, .footer, .header, .menuRestaurant__components-plateCardDescription, .menuRestaurant__components, .menuRestaurant, .fonctionnement__table tbody, .fonctionnement, .infoGroup, .pageContainer, .restaurants__article-cardContentTxt, .restaurants__article, .restaurants__Cards, .restaurants {
+#Heart-gradient {
+  --color-stop-1: #9356DC;
+  --color-stop-2: #FF79DA;
+}
+
+.footer ul, .footer, .header, .menu__item-plateCardDescription, .menu__category, .menu, .fonctionnement__table tbody, .fonctionnement, .infoGroup, .pageContainer, .restaurants__article-cardContentTxt, .restaurants__article, .restaurants__Cards, .restaurants {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.headerMenu, .header__form, .menuRestaurant__components-SelectBtn, .menuRestaurant__components-plateCardContent, .menuRestaurant__components-plateCard, .menuRestaurant__top, .fonctionnement__table td, .fonctionnement__table tr, .restaurants__article-cardContent {
+.headerMenu, .header__form, .menu__item-checkBtn, .menu__item-plateCardContent, .menu__item-plateCard, .menu__top, .fonctionnement__table td, .fonctionnement__table tr, .restaurants__article-cardContent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,24 +140,24 @@ h3, p {
   font-weight: 700;
 }
 
-.menuRestaurant__title {
+.menu__title {
   font-family: Shrikhand;
   font-size: 28px;
   font-weight: 400;
 }
-.menuRestaurant__components-title {
+.menu__category-title {
   font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
 }
-.menuRestaurant__components-plateCard h4 {
+.menu__item-plateCard h4 {
   font-size: 1.125rem;
   font-weight: bold;
 }
-.menuRestaurant__components-plateCard p, .menuRestaurant__components-plateCardPrice {
+.menu__item-plateCard p, .menu__item-plateCardPrice {
   font-size: 0.938rem;
 }
-.menuRestaurant__components-plateCardPrice {
+.menu__item-plateCardPrice {
   color: #353535;
   font-weight: bold;
 }
@@ -248,6 +253,23 @@ h3, p {
   transform: translate(-15%, -330%);
 }
 
+.icon-vgradient {
+  fill: none;
+}
+
+input[type=checkbox] {
+  appearance: none;
+  visibility: hidden;
+  display: none;
+}
+
+label input:checked ~ svg {
+  fill: url(#Heart-gradient);
+}
+label input:checked ~ svg path {
+  stroke: none;
+}
+
 .infoGroup {
   text-align: center;
   gap: 27px;
@@ -328,7 +350,7 @@ h3, p {
   object-fit: cover;
 }
 
-.menuRestaurant {
+.menu {
   border-radius: 40px 40px 0 0;
   gap: 40px;
   padding: 30px 13px 40px 13px;
@@ -337,58 +359,29 @@ h3, p {
   top: 220px;
 }
 @media (min-width: 1024px) {
-  .menuRestaurant {
+  .menu {
     width: 74%;
     padding: 50px 15% 40px 15%;
   }
 }
-.menuRestaurant__top {
+.menu__top {
   justify-content: space-between;
   width: 100%;
   padding-right: 25px;
 }
 @media (min-width: 1024px) {
-  .menuRestaurant__top {
+  .menu__top {
     justify-content: center;
     gap: 24px;
+    padding: 0;
   }
 }
-.menuRestaurant__components {
+.menu__category {
   align-items: unset;
   width: 100%;
   gap: 12px;
 }
-.menuRestaurant__components-plateCard {
-  align-items: unset;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-.menuRestaurant__components-plateCard:hover .menuRestaurant__components-SelectBtn {
-  margin-right: 0;
-}
-.menuRestaurant__components-plateCardContent {
-  align-items: unset;
-  justify-content: space-between;
-  width: 100%;
-  padding: 15px;
-}
-.menuRestaurant__components-plateCardDescription {
-  align-items: unset;
-  gap: 5px;
-}
-.menuRestaurant__components-plateCardPrice {
-  display: flex;
-  align-items: flex-end;
-  transition: transform 230ms ease-in-out;
-}
-.menuRestaurant__components-SelectBtn {
-  width: 65px;
-  margin-right: -65px;
-  background: #99E2D0;
-  transition: margin-right 230ms ease-in-out;
-}
-.menuRestaurant__components-title:after {
+.menu__category-title:after {
   content: "";
   display: block;
   width: 12%;
@@ -396,9 +389,45 @@ h3, p {
   border-bottom: 3px solid #99E2D0;
 }
 @media (min-width: 1024px) {
-  .menuRestaurant__components-title:after {
+  .menu__category-title:after {
     width: 6%;
   }
+}
+.menu__item-plateCard {
+  align-items: unset;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.menu__item-plateCard:hover .menu__item-checkBtn {
+  margin-right: 0;
+}
+.menu__item-plateCardContent {
+  align-items: unset;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+}
+.menu__item-plateCardDescription {
+  align-items: unset;
+  gap: 5px;
+  overflow: hidden;
+}
+.menu__item-plateCardDescription p, .menu__item-plateCardDescription h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__item-plateCardPrice {
+  display: flex;
+  align-items: flex-end;
+  transition: transform 230ms ease-in-out;
+}
+.menu__item-checkBtn {
+  width: 65px;
+  margin-right: -65px;
+  background: #99E2D0;
+  transition: margin-right 230ms ease-in-out;
 }
 
 .header {
