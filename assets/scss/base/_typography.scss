@@ -96,14 +96,15 @@ h3, p{
             font-weight: bold;
         }
 
-        &-plateCard p{
+        &-plateCard p, &-plateCardPrice{
             font-size: 0.938rem;
         }   
 
         &-plateCardPrice{
             color: $txt-price;
             font-weight: bold;
+            
+
         }
     }   
 }
-

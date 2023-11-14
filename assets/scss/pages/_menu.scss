@@ -21,6 +21,7 @@
 
 }
 
+
 .menuRestaurant{
     @extend %flex-column;
     border-radius: 40px 40px 0 0;
@@ -33,7 +34,6 @@
     @media (min-width: 1024px) {
         width: 74%;
         padding: 50px 15% 40px 15%;
-        // padding: 50px 215px 40px 215px;
     }
 
     &__top{
@@ -54,21 +54,112 @@
         width: 100%;
         gap: 12px;
 
+
+
+        //  ***********************************************    Demo Hugo - SANS <div class="menuRestaurant__components-BOUTTON">   *********************************************** //
+
         &-plateCard{
             @extend %flex-row;
-            justify-content: space-between;
-            align-items: end;
-            padding: 15px;
+            align-items: unset;
             border-radius: 15px;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+            overflow: hidden;
+
+            &:hover{          
+                .menuRestaurant__components-SelectBtn{
+                    margin-right: 0;
+                }
+            }
         }
 
-        &-plateCardText{
+        &-plateCardContent{
+            @extend %flex-row;
+            align-items: unset;
+            justify-content: space-between;
+            width: 100%;
+            padding: 15px;
+        }
+
+        &-plateCardDescription{
             @extend %flex-column;
             align-items: unset;
             gap: 5px;
         }
 
+        &-plateCardPrice{           
+            display: flex;
+            align-items: flex-end;
+            transition: transform 230ms ease-in-out;
+        }
+
+        &-SelectBtn{
+            @extend %flex-row;
+
+            // width: 59px;
+            // margin-right: -59px;
+
+            width: 65px;
+            margin-right: -65px;
+            
+            background: $secondary-components-background;
+            transition: margin-right 230ms ease-in-out;  
+        }
+
+
+        //  ***********************************************    Demo Hugo - SANS <div class="menuRestaurant__components-BOUTTON">   *********************************************** //
+
+    
+        //  ***********************************************    Demo Hugo - AVEC <div class="menuRestaurant__components-BOUTTON"> *********************************************** //
+        // &-plateCard{
+        //     border-radius: 15px;
+        //     width: 100%;
+        //     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+
+        //     &:hover{          
+        //         .menuRestaurant__components-SelectBtn{
+        //             margin-right: 0;
+        //         }
+        //     }
+        // }
+
+        // &-plateCardContent{
+        //     @extend %flex-row;
+        //     align-items: unset;
+        //     justify-content: space-between;
+        //     width: 100%;
+        //     border-radius: 15px;
+
+        //     overflow: hidden;
+        // }
+
+        // &-plateCardDescription{
+        //     @extend %flex-column;
+        //     align-items: unset;
+        //     gap: 5px;
+        //     padding: 15px;
+        // }
+
+        // &-plateCardPrice{           
+        //     padding: 15px ;
+        //     width: 59px;
+        // }
+
+        // &-SelectBtn{
+        //     width: 59px;
+        //     height: 68.02px;
+        //     background: $secondary-components-background;
+        //     margin-right: -59px;
+        //     transition: margin-right 1s linear;           
+        // }
+
+        // &-BOUTTON{
+        //     @extend %flex-row;
+        //     align-items: flex-end;
+        // }
+
+        //  ***********************************************    Demo Hugo - AVEC <div class="menuRestaurant__components-BOUTTON"> *********************************************** //
+
+        
         &-title:after {
             content: ""; 
             display: block; 
@@ -84,3 +175,5 @@
 
     
 }
+
+

@@ -1,11 +1,11 @@
-.footer ul, .footer, .header, .menuRestaurant__components-plateCardText, .menuRestaurant__components, .menuRestaurant, .fonctionnement__table tbody, .fonctionnement, .infoGroup, .pageContainer, .restaurants__article-cardContentTxt, .restaurants__article, .restaurants__Cards, .restaurants {
+.footer ul, .footer, .header, .menuRestaurant__components-plateCardDescription, .menuRestaurant__components, .menuRestaurant, .fonctionnement__table tbody, .fonctionnement, .infoGroup, .pageContainer, .restaurants__article-cardContentTxt, .restaurants__article, .restaurants__Cards, .restaurants {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.headerMenu, .header__form, .menuRestaurant__components-plateCard, .menuRestaurant__top, .fonctionnement__table td, .fonctionnement__table tr, .restaurants__article-cardContent {
+.headerMenu, .header__form, .menuRestaurant__components-SelectBtn, .menuRestaurant__components-plateCardContent, .menuRestaurant__components-plateCard, .menuRestaurant__top, .fonctionnement__table td, .fonctionnement__table tr, .restaurants__article-cardContent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,7 +149,7 @@ h3, p {
   font-size: 1.125rem;
   font-weight: bold;
 }
-.menuRestaurant__components-plateCard p {
+.menuRestaurant__components-plateCard p, .menuRestaurant__components-plateCardPrice {
   font-size: 0.938rem;
 }
 .menuRestaurant__components-plateCardPrice {
@@ -359,15 +359,34 @@ h3, p {
   gap: 12px;
 }
 .menuRestaurant__components-plateCard {
-  justify-content: space-between;
-  align-items: end;
-  padding: 15px;
+  align-items: unset;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
-.menuRestaurant__components-plateCardText {
+.menuRestaurant__components-plateCard:hover .menuRestaurant__components-SelectBtn {
+  margin-right: 0;
+}
+.menuRestaurant__components-plateCardContent {
+  align-items: unset;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+}
+.menuRestaurant__components-plateCardDescription {
   align-items: unset;
   gap: 5px;
+}
+.menuRestaurant__components-plateCardPrice {
+  display: flex;
+  align-items: flex-end;
+  transition: transform 230ms ease-in-out;
+}
+.menuRestaurant__components-SelectBtn {
+  width: 65px;
+  margin-right: -65px;
+  background: #99E2D0;
+  transition: margin-right 230ms ease-in-out;
 }
 .menuRestaurant__components-title:after {
   content: "";
