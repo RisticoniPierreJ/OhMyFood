@@ -8,10 +8,7 @@ input[type="checkbox"]{
     display: none;
 }
 
-label input:checked ~ svg{
+label input:checked ~ svg path{
+    stroke: none;
     fill: url(#Heart-gradient);
-
-    path{
-        stroke: none;
-    }
 }

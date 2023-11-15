@@ -1,16 +1,17 @@
+@charset "UTF-8";
 #Heart-gradient {
   --color-stop-1: #9356DC;
   --color-stop-2: #FF79DA;
 }
 
-.footer ul, .footer, .header, .menu__item-plateCardDescription, .menu__category, .menu, .fonctionnement__table tbody, .fonctionnement, .infoGroup, .pageContainer, .restaurants__article-cardContentTxt, .restaurants__article, .restaurants__Cards, .restaurants {
+.menu__item-plateCardDescription, .menu__category, .menu, .restaurants__Cards, .restaurants, .fonctionnement__table tbody, .fonctionnement, .infoGroup, .pageContainer, .footer ul, .footer, .header, .card__contentTxt, .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.headerMenu, .header__form, .menu__item-checkBtn, .menu__item-plateCardContent, .menu__item-plateCard, .menu__top, .fonctionnement__table td, .fonctionnement__table tr, .restaurants__article-cardContent {
+.menu__item-checkBtn, .menu__item-plateCardContent, .menu__item-plateCard, .menu__top, .fonctionnement__table td, .fonctionnement__table tr, .headerMenu, .header__form, .card__content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,15 +134,11 @@ h3, p {
   font-weight: bold;
 }
 
-.restaurants__article-cardContent p {
+.card__content p {
   font-size: 1.063rem;
 }
-.restaurants__article-cardContent h3 {
+.card__content h3 {
   font-weight: bold;
-}
-.restaurants__article-badge {
-  font-size: 0.875rem;
-  font-weight: 700;
 }
 
 .menu__title {
@@ -166,7 +163,6 @@ h3, p {
   font-weight: bold;
 }
 
-/*************************** anything reusable such as buttons, navbars, cards etc. ***************************/
 .btn {
   position: relative;
   z-index: 1;
@@ -200,64 +196,6 @@ h3, p {
   padding: 16px 50px;
 }
 
-.restaurants {
-  align-items: unset;
-  gap: 18px;
-  padding: 55px 17px 65px 17px;
-  background-color: #F6F6F6;
-}
-@media (min-width: 1024px) {
-  .restaurants {
-    gap: 28px;
-    padding: 30px 12.5%;
-  }
-}
-.restaurants__Cards {
-  align-items: unset;
-  gap: 18px;
-}
-@media (min-width: 1024px) {
-  .restaurants__Cards {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-column-gap: 9.25%;
-    grid-row-gap: 50px;
-  }
-}
-.restaurants__article {
-  align-items: end;
-  width: 100%;
-  border-radius: 15px;
-  background-color: white;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-}
-.restaurants__article-cardContent {
-  justify-content: space-between;
-  width: 100%;
-  padding: 18px 25px 18px 13px;
-}
-.restaurants__article-cardContentTxt {
-  align-items: unset;
-  gap: 5px;
-}
-.restaurants__article img {
-  border-radius: 15px 15px 0 0;
-  width: 100%;
-  height: 174px;
-  object-fit: cover;
-}
-.restaurants__article-badge {
-  padding: 8px 9px 6px 9px;
-  border-radius: 2px;
-  width: 80px;
-  height: 30px;
-  text-align: center;
-  background-color: #99E2D0;
-  color: #008766;
-  position: absolute;
-  transform: translate(-15%, -330%);
-}
-
 .icon-vgradient {
   fill: none;
 }
@@ -268,178 +206,32 @@ input[type=checkbox] {
   display: none;
 }
 
-label input:checked ~ svg {
-  fill: url(#Heart-gradient);
-}
 label input:checked ~ svg path {
   stroke: none;
+  fill: url(#Heart-gradient);
 }
 
-.infoGroup {
-  text-align: center;
-  gap: 27px;
-  padding: 40px 30px 57px 30px;
-  background-color: #F6F6F6;
-}
-.infoGroup__title {
-  padding: 0 17px;
-}
-@media (min-width: 1024px) {
-  .infoGroup {
-    padding: 30px 0 30px 0;
-  }
-}
-
-.fonctionnement {
-  align-items: inherit;
-  gap: 25px;
-  padding: 50px 20px 70px 20px;
-  background-color: white;
-}
-@media (min-width: 1024px) {
-  .fonctionnement {
-    padding: 50px 12.5%;
-  }
-}
-@media (min-width: 1024px) {
-  .fonctionnement__table {
-    width: 100%;
-  }
-}
-.fonctionnement__table tbody {
-  gap: 25px;
-}
-@media (min-width: 1024px) {
-  .fonctionnement__table tbody {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-.fonctionnement__table tr {
-  justify-content: flex-start;
+.card {
+  align-items: end;
   width: 100%;
-  max-width: 322px;
-  padding: 24px 33px;
-  border-radius: 20px;
-  background-color: #F6F6F6;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-}
-.fonctionnement__table-number {
-  text-align: center;
-  padding-top: 5px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #9356DC;
-  color: #FFFFFF;
-  transform: translateX(-180%);
-}
-.fonctionnement__table-icon {
-  padding-right: 27px;
-}
-
-.pageContainer {
-  align-items: unset;
-}
-
-@media (min-width: 1024px) {
-  .mainMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.menuTopImage {
-  height: 275px;
-  width: 100%;
-  position: absolute;
-  object-fit: cover;
-}
-
-.menu {
-  border-radius: 40px 40px 0 0;
-  gap: 40px;
-  padding: 30px 13px 40px 13px;
-  background-color: #F6F6F6;
-  position: relative;
-  top: 220px;
-}
-@media (min-width: 1024px) {
-  .menu {
-    width: 74%;
-    padding: 50px 15% 40px 15%;
-  }
-}
-.menu__top {
-  justify-content: space-between;
-  width: 100%;
-  padding-right: 25px;
-}
-@media (min-width: 1024px) {
-  .menu__top {
-    justify-content: center;
-    gap: 24px;
-    padding: 0;
-  }
-}
-.menu__category {
-  align-items: unset;
-  width: 100%;
-  gap: 12px;
-}
-.menu__category-title:after {
-  content: "";
-  display: block;
-  width: 12%;
-  padding-top: 9px;
-  border-bottom: 3px solid #99E2D0;
-}
-@media (min-width: 1024px) {
-  .menu__category-title:after {
-    width: 6%;
-  }
-}
-.menu__item-plateCard {
-  align-items: unset;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
 }
-.menu__item-plateCard:hover .menu__item-checkBtn {
-  margin-right: 0;
+.card img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 174px;
+  object-fit: cover;
 }
-.menu__item-plateCardContent {
-  align-items: unset;
+.card__content {
   justify-content: space-between;
   width: 100%;
-  padding: 15px;
-  overflow: hidden;
+  padding: 18px 25px 18px 13px;
 }
-.menu__item-plateCardDescription {
+.card__contentTxt {
   align-items: unset;
   gap: 5px;
-  width: 100%;
-  overflow: hidden;
-}
-.menu__item-plateCardDescription p, .menu__item-plateCardDescription h4 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.menu__item-plateCardPrice {
-  display: flex;
-  align-items: flex-end;
-  padding-left: 7px;
-  transition: transform 230ms ease-in-out;
-}
-.menu__item-checkBtn {
-  flex-shrink: 0;
-  width: 59px;
-  margin-right: -59px;
-  background: #99E2D0;
-  transition: margin-right 230ms ease-in-out;
 }
 
 .header {
@@ -534,6 +326,198 @@ input:focus {
 .footerMenu {
   position: relative;
   top: 220px;
+}
+
+.infoGroup {
+  text-align: center;
+  gap: 27px;
+  padding: 40px 30px 57px 30px;
+  background-color: #F6F6F6;
+}
+.infoGroup__title {
+  padding: 0 17px;
+}
+@media (min-width: 1024px) {
+  .infoGroup {
+    padding: 30px 0 30px 0;
+  }
+}
+
+.fonctionnement {
+  align-items: inherit;
+  gap: 25px;
+  padding: 50px 20px 70px 20px;
+  background-color: white;
+}
+@media (min-width: 1024px) {
+  .fonctionnement {
+    padding: 50px 12.5%;
+  }
+}
+@media (min-width: 1024px) {
+  .fonctionnement__table {
+    width: 100%;
+  }
+}
+.fonctionnement__table tbody {
+  gap: 25px;
+}
+@media (min-width: 1024px) {
+  .fonctionnement__table tbody {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.fonctionnement__table tr {
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 322px;
+  padding: 24px 33px;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.fonctionnement__table-number {
+  text-align: center;
+  padding-top: 5px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFFFFF;
+  transform: translateX(-180%);
+}
+.fonctionnement__table-icon {
+  padding-right: 27px;
+}
+
+.restaurants {
+  align-items: unset;
+  gap: 18px;
+  padding: 55px 17px 65px 17px;
+  background-color: #F6F6F6;
+}
+@media (min-width: 1024px) {
+  .restaurants {
+    gap: 28px;
+    padding: 30px 12.5%;
+  }
+}
+.restaurants__Cards {
+  align-items: unset;
+  gap: 18px;
+}
+@media (min-width: 1024px) {
+  .restaurants__Cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-column-gap: 9.25%;
+    grid-row-gap: 50px;
+  }
+}
+
+.pageContainer {
+  align-items: unset;
+}
+
+@media (min-width: 1024px) {
+  .mainMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.menuTopImage {
+  height: 275px;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.menu {
+  border-radius: 40px 40px 0 0;
+  gap: 40px;
+  padding: 30px 13px 40px 13px;
+  background-color: #F6F6F6;
+  position: relative;
+  top: 220px;
+}
+@media (min-width: 1024px) {
+  .menu {
+    width: 74%;
+    padding: 50px 15% 40px 15%;
+  }
+}
+.menu__top {
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 25px;
+}
+@media (min-width: 1024px) {
+  .menu__top {
+    justify-content: center;
+    gap: 24px;
+    padding: 0;
+  }
+}
+.menu__category {
+  align-items: unset;
+  width: 100%;
+  gap: 12px;
+  /* pour surligner le titre des catégories */
+}
+.menu__category-title:after {
+  content: "";
+  display: block;
+  width: 12%;
+  padding-top: 9px;
+  border-bottom: 3px solid #99E2D0;
+}
+@media (min-width: 1024px) {
+  .menu__category-title:after {
+    width: 6%;
+  }
+}
+.menu__item-plateCard {
+  align-items: unset;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.menu__item-plateCard:hover .menu__item-checkBtn {
+  margin-right: 0;
+}
+.menu__item-plateCardContent {
+  align-items: unset;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  overflow: hidden;
+}
+.menu__item-plateCardDescription {
+  align-items: unset;
+  gap: 5px;
+  width: 100%;
+  overflow: hidden;
+}
+.menu__item-plateCardDescription p, .menu__item-plateCardDescription h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__item-plateCardPrice {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 7px;
+}
+.menu__item-checkBtn {
+  flex-shrink: 0;
+  width: 59px;
+  margin-right: -59px;
+  background: #99E2D0;
+  transition: margin-right 230ms ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -52,6 +52,7 @@
         width: 100%;
         gap: 12px;
 
+        /* pour surligner le titre des catégories */
         &-title:after {
             content: ""; 
             display: block; 
@@ -108,7 +109,6 @@
             display: flex;
             align-items: flex-end;
             padding-left: 7px;
-            transition: transform 230ms ease-in-out;
         }
 
         &-checkBtn{

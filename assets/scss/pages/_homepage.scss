@@ -79,4 +79,30 @@
 
 }
 
+.restaurants{
+    @extend %flex-column;
+    align-items: unset;
+    gap: 18px;
+    padding: 55px 17px 65px 17px;
+    background-color: $background-main;
+
+    @media (min-width: 1024px) {
+        gap: 28px;
+        padding: 30px 12.5%;
+    }
+
+    &__Cards{
+        @extend %flex-column;
+        align-items: unset;
+        gap: 18px;
+        
+        @media (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0,1fr));
+            grid-column-gap: 9.25%;
+            grid-row-gap: 50px;
+        }
+    }
+}
+
 
