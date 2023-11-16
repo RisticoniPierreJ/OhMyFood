@@ -6,7 +6,7 @@
     padding: 22px 25px;
     background-color: $background-dark;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
         flex-direction: row-reverse;
         padding: 55px 25px 30px 25px;
         justify-content: unset;
@@ -18,7 +18,7 @@
         align-items: unset;
         gap: 7px;
         
-        @media (min-width: 1024px) {
+        @media (min-width: 1025px) {
             flex-direction: row;
         }
     }
@@ -28,14 +28,14 @@
     }
     
     &__title{
-        @media (min-width: 1024px) {
+        @media (min-width: 1025px) {
             padding-right: 40px;
             padding-left: 70px;
         }
     }
 
     & li{
-        @media (min-width: 1024px) {
+        @media (min-width: 1025px) {
             padding-right: 6px;
             padding-left: 6px;
         }
