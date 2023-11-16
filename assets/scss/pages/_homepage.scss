@@ -39,6 +39,14 @@
 
 }
 
+.iconColorMain{
+    color: $icon-color-main;
+}
+
+.iconColorSecondary{
+    color: $icon-color-secondary;
+}
+
 .fonctionnementAllCards{
     @extend %flex-column;
     gap: 24px;
@@ -76,11 +84,8 @@
 
     &__content{
         @extend %flex-row;
-        gap: 26px;
-    }
-
-    &__icon{
-        @extend %flex-row;
+        align-items: first baseline;
+        gap: 17px;
     }
 }
 

@@ -61,6 +61,10 @@ h3, p{
     &__content{
         font-weight: bold;
     }
+    
+    &__content p{
+        font-size: 1rem;
+    }
 }
 
 .card{

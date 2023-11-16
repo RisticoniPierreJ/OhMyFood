@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.menu__item-checkBtn, .menu__item-plateCardContent, .menu__item-plateCard, .menu__top, .fonctionnementCard__icon, .fonctionnementCard__content, .fonctionnementCard__number, .fonctionnementCard, .headerMenu, .header__form, .card__content {
+.menu__item-checkBtn, .menu__item-plateCardContent, .menu__item-plateCard, .menu__top, .fonctionnementCard__content, .fonctionnementCard__number, .fonctionnementCard, .headerMenu, .header__form, .card__content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,6 +138,9 @@ h3, p {
 .fonctionnementCard__content {
   font-weight: bold;
 }
+.fonctionnementCard__content p {
+  font-size: 1rem;
+}
 
 .card__content p {
   font-size: 1.063rem;
@@ -166,6 +169,23 @@ h3, p {
 .menu__item-plateCardPrice {
   color: #353535;
   font-weight: bold;
+}
+
+.badgeNew {
+  position: relative;
+}
+
+.badgeNew::before {
+  content: "Nouveau";
+  padding: 8px 12px;
+  border-radius: 2px;
+  color: #278870;
+  background: #99E2D0;
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .btn {
@@ -239,23 +259,6 @@ label input:checked ~ svg path {
   gap: 5px;
 }
 
-.badgeNew {
-  position: relative;
-}
-
-.badgeNew::before {
-  content: "Nouveau";
-  padding: 8px 12px;
-  border-radius: 2px;
-  color: #278870;
-  background: #99E2D0;
-  position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
-  font-weight: bold;
-  font-size: 14px;
-}
-
 .header {
   width: 100%;
 }
@@ -280,6 +283,10 @@ label input:checked ~ svg path {
 .header__form input {
   border: none;
   background-color: #EAEAEA;
+}
+
+.locationDot {
+  color: #353535;
 }
 
 ::placeholder {
@@ -385,6 +392,14 @@ input:focus {
   }
 }
 
+.iconColorMain {
+  color: #7E7E7E;
+}
+
+.iconColorSecondary {
+  color: #9356DC;
+}
+
 .fonctionnementAllCards {
   gap: 24px;
   width: 100%;
@@ -419,8 +434,10 @@ input:focus {
   transform: translateX(-85%);
 }
 .fonctionnementCard__content {
-  gap: 26px;
+  align-items: first baseline;
+  gap: 17px;
 }
+
 .restaurants {
   align-items: unset;
   gap: 18px;
