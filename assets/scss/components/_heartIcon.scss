@@ -1,0 +1,29 @@
+.heartIcon{
+    vertical-align: top;
+
+    &__size{
+        font-size: 1.5rem;
+    }
+
+    &__full{
+        color: transparent;
+
+        &:hover::before{
+            opacity: 1;
+        }
+
+        &::before{
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: $item-gradient-dark;
+        
+            opacity: 0;
+            transition: opacity 300ms;
+        }
+
+    }
+}
+
+
+

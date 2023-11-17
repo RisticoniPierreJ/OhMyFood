@@ -1,9 +1,4 @@
 @charset "UTF-8";
-#Heart-gradient {
-  --color-stop-1: #9356DC;
-  --color-stop-2: #FF79DA;
-}
-
 .menu__item-plateCardDescription, .menu__category, .menu, .pageContainerMenu, .restaurants__Cards, .restaurants, .fonctionnementAllCards, .fonctionnement, .infoGroup, .pageContainer, .footer ul, .footer, .header, .card__contentTxt, .card {
   display: flex;
   flex-direction: column;
@@ -11,7 +6,7 @@
   align-items: center;
 }
 
-.menu__item-checkBtn, .menu__item-plateCardContent, .menu__item-plateCard, .menu__top, .fonctionnementCard__content, .fonctionnementCard__number, .fonctionnementCard, .headerMenu, .header__form, .card__content {
+.menu__item-checkIcon, .menu__item-checkBtn, .menu__item-plateCardContent, .menu__item-plateCard, .menu__top, .fonctionnementCard__content, .fonctionnementCard__number, .fonctionnementCard, .headerMenu, .header__form, .card__content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,10 +194,10 @@ h3, p {
   background: linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
-.btn:hover::after {
+.btn:hover::before {
   opacity: 1;
 }
-.btn::after {
+.btn::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -221,19 +216,25 @@ h3, p {
   padding: 16px 50px;
 }
 
-.icon-vgradient {
-  fill: none;
+.heartIcon {
+  vertical-align: top;
 }
-
-input[type=checkbox] {
-  appearance: none;
-  visibility: hidden;
-  display: none;
+.heartIcon__size {
+  font-size: 1.5rem;
 }
-
-label input:checked ~ svg path {
-  stroke: none;
-  fill: url(#Heart-gradient);
+.heartIcon__full {
+  color: transparent;
+}
+.heartIcon__full:hover::before {
+  opacity: 1;
+}
+.heartIcon__full::before {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
+  opacity: 0;
+  transition: opacity 300ms;
 }
 
 .card {
@@ -336,7 +337,10 @@ input:focus {
     flex-direction: row;
   }
 }
-.footer svg {
+.footer__icon1 {
+  margin-right: 10px;
+}
+.footer__icon2 {
   margin-right: 5px;
 }
 @media (min-width: 1025px) {
@@ -355,6 +359,11 @@ input:focus {
 .footerMenu {
   position: relative;
   top: 220px;
+}
+@media (min-width: 1025px) {
+  .footerMenu {
+    top: 320px;
+  }
 }
 
 .infoGroup {
@@ -487,6 +496,11 @@ input:focus {
   position: absolute;
   object-fit: cover;
 }
+@media (min-width: 1025px) {
+  .menuTopImage {
+    height: 380px;
+  }
+}
 
 .menu {
   border-radius: 40px 40px 0 0;
@@ -500,6 +514,11 @@ input:focus {
   .menu {
     width: 74%;
     padding: 50px 15% 40px 15%;
+  }
+}
+@media (min-width: 1025px) {
+  .menu {
+    top: 320px;
   }
 }
 .menu__top {
@@ -571,6 +590,13 @@ input:focus {
   margin-right: -59px;
   background: #99E2D0;
   transition: margin-right 230ms ease-in-out;
+}
+.menu__item-checkIcon {
+  background: white;
+  color: #99E2D0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

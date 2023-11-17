@@ -17,6 +17,10 @@
     width: 100%;
     position: absolute;
     object-fit: cover;
+
+    @media (min-width: 1025px) {
+        height: 380px;
+    }
 }
 
 .menu{
@@ -31,6 +35,10 @@
     @media (min-width: 768px) {
         width: 74%;
         padding: 50px 15% 40px 15%;
+    }
+
+    @media (min-width: 1025px) {
+        top: 320px;
     }
 
     &__top{
@@ -119,7 +127,14 @@
             background: $secondary-item-background;
             transition: margin-right 230ms ease-in-out;  
         }
+
+        &-checkIcon{
+            @extend %flex-row;
+            background: white;
+            color: $secondary-item-background;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+        }
     }   
 }
-
-

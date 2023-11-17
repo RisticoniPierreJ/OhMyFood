@@ -22,8 +22,12 @@
             flex-direction: row;
         }
     }
+
+    &__icon1{
+        margin-right: 10px;
+    }
     
-    & svg{
+    &__icon2{
         margin-right: 5px;
     }
     
@@ -45,4 +49,10 @@
 .footerMenu{
     position: relative;
     top: 220px;
+
+    @media (min-width: 1025px) {
+        top: 320px;
+    }
+
 }
+
