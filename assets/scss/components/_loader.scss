@@ -1,0 +1,56 @@
+.backgroundLoader{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: $background-main ;
+    opacity: 0.7;
+    z-index: 99;
+    animation: disapear 0.7s 1.5s forwards;
+}
+
+.laoderContainer{
+    position: fixed;
+    inset: 0;
+    z-index: 99;  
+    @extend %flex-row;
+    animation: disapear 0.7s 1.5s forwards;
+}
+
+.dot{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 15px;
+    animation: loader infinite 0.3s alternate ;
+}
+
+.dot1{
+    background: $dot-1;
+    // background: linear-gradient(90deg, rgba(147,86,220,1) 0%, rgba(183,98,219,1) 33%);
+}
+
+.dot2{
+    animation-delay: 0.05s;
+    background: $dot-2;
+    // background: linear-gradient(90deg,  rgba(183,98,219,1) 33%, rgba(224,111,218,1) 71%);
+}
+
+.dot3{
+    animation-delay: 0.1s;
+    background: $dot-3;
+    // background: linear-gradient(90deg, rgba(224,111,218,1) 10%, rgba(255,121,218,1) 100%);
+}
+
+@keyframes loader{
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes disapear{
+    100%{
+        opacity: 0;
+        border-radius: 500%;
+        transform: scale(0);
+    }
+}

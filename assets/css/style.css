@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.menu__item-checkIcon, .menu__item-checkBtn, .menu__item-plateCardContent, .menu__item-plateCard, .menu__top, .fonctionnementCard__content, .fonctionnementCard__number, .fonctionnementCard, .headerMenu, .header__form, .card__content {
+.menu__item-checkIcon, .menu__item-checkBtn, .menu__item-plateCardContent, .menu__item-plateCard, .menu__top, .fonctionnementCard__content, .fonctionnementCard__number, .fonctionnementCard, .headerMenu, .header__form, .card__content, .laoderContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,14 +188,11 @@ h3, p {
   z-index: 1;
   border: none;
   border-radius: 25px;
-  padding: 16px 18px;
+  padding: 17px 22.5px;
   text-align: center;
   color: #FFFFFF;
   background: linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-}
-.btn:hover::before {
-  opacity: 1;
 }
 .btn::before {
   content: "";
@@ -207,9 +204,12 @@ h3, p {
   bottom: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 300ms;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  transition: opacity 300ms;
+}
+.btn:hover::before {
+  opacity: 1;
 }
 
 .btnMenu {
@@ -225,9 +225,6 @@ h3, p {
 .heartIcon__full {
   color: transparent;
 }
-.heartIcon__full:hover::before {
-  opacity: 1;
-}
 .heartIcon__full::before {
   color: transparent;
   background-clip: text;
@@ -236,7 +233,61 @@ h3, p {
   opacity: 0;
   transition: opacity 300ms;
 }
+.heartIcon__full:hover::before {
+  opacity: 1;
+}
 
+.backgroundLoader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #F6F6F6;
+  opacity: 0.7;
+  z-index: 99;
+  animation: disapear 0.7s 1.5s forwards;
+}
+
+.laoderContainer {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  animation: disapear 0.7s 1.5s forwards;
+}
+
+.dot {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 15px;
+  animation: loader infinite 0.3s alternate;
+}
+
+.dot1 {
+  background: #9356DC;
+}
+
+.dot2 {
+  animation-delay: 0.05s;
+  background: #c867db;
+}
+
+.dot3 {
+  animation-delay: 0.1s;
+  background: #FF79DA;
+}
+
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes disapear {
+  100% {
+    opacity: 0;
+    border-radius: 500%;
+    transform: scale(0);
+  }
+}
 .card {
   align-items: end;
   width: 100%;

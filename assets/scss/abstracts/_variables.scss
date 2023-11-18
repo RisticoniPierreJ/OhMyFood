@@ -23,12 +23,17 @@ $txt-price : #353535;
 $txt-light : #FFFFFF;
 $txt-dark : #000000;
 
-// Gradiants 
+// Button Gradiants 
 
 $item-gradient-light: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%),
-linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
-                            
+linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);                          
 $item-gradient-dark: linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
+
+// Loader 
+
+$dot-1 : #9356DC;
+$dot-2 : #c867db;
+$dot-3 : #FF79DA;
 
 //********** Utils Position Dimension **********//
 
