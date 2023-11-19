@@ -17,11 +17,21 @@
 }
 
 .dot{
-    width: 35px;
-    height: 35px;
+    width: 23px;
+    height: 23px;
     border-radius: 50%;
     margin: 0 15px;
     animation: loader infinite 0.3s alternate ;
+    
+    @media (min-width: 768px) {
+        width: 30px;
+        height: 30px;
+    }
+    
+    @media (min-width: 1025px) {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 .dot1{
@@ -43,14 +53,14 @@
 
 @keyframes loader{
     100% {
-        transform: translateY(-30px);
+        transform: translateY(-20px);
     }
 }
 
 @keyframes disapear{
     100%{
         opacity: 0;
-        border-radius: 500%;
         transform: scale(0);
+        border-radius: 50%;
     }
 }

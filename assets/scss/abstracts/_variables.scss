@@ -23,11 +23,12 @@ $txt-price : #353535;
 $txt-light : #FFFFFF;
 $txt-dark : #000000;
 
-// Button Gradiants 
+//Gradiants 
 
 $item-gradient-light: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%),
 linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);                          
 $item-gradient-dark: linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
+$heart-gradient: linear-gradient(180deg, #9356DC -11%, #FF79DA 123%);
 
 // Loader 
 

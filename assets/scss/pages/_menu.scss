@@ -75,13 +75,28 @@
     }
 
     &__item{
+
+        &-allCards{
+            @extend %flex-column;
+            align-items: unset;
+            gap: 12px;
+
+        } 
+        
         &-plateCard{
+            @for $i from 1 through 4 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 100ms * $i;
+                }
+            }
+
             @extend %flex-row;
             align-items: unset;
             border-radius: 15px;
             background-color: $background-light;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
             overflow: hidden;
+            animation: appearing 1s both;
 
             &:hover{          
                 .menu__item-checkBtn{
@@ -137,4 +152,20 @@
             height: 20px;
         }
     }   
+}
+
+@keyframes appearing {
+    0% {
+        // transform: scale(0);
+
+        opacity:0 ;
+        transform: translateY(50%);
+    }
+    100% {
+        // transform: scale(1);
+
+        opacity:1 ;
+        transform: translateY(0);
+
+    }
 }
