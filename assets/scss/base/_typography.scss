@@ -20,6 +20,7 @@ h3, p{
 
 // ***************** Cas Particulier ***************** //
 
+/* SearchBar */
 ::placeholder {
     font-size: 16px;
     font-weight: 500;
@@ -75,6 +76,11 @@ h3, p{
     &__content h3{
         font-weight: bold;
     }
+}
+
+.badgeNew::before{
+    font-weight: bold;
+    font-size: 0.875rem;
 }
 
 

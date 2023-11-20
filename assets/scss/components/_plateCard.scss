@@ -1,0 +1,90 @@
+.menu__item{
+    
+    &-allCards{
+        @extend %flex-column;
+        align-items: unset;
+        gap: 12px;
+    } 
+    
+    &-plateCard{
+
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {
+                animation-delay: 100ms * $i;
+            }
+        }
+
+        @extend %flex-row;
+        align-items: unset;
+        border-radius: 15px;
+        background-color: $background-light;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+        overflow: hidden;
+        animation: appearing 1s both;
+
+        &:hover{          
+            .menu__item-checkBtn{
+                margin-right: 0;
+            }
+        }
+    }
+
+    &-plateCardContent{
+        @extend %flex-row;
+        align-items: unset;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px;
+        overflow: hidden;
+    }
+    
+    &-plateCardDescription{
+        @extend %flex-column;
+        align-items: unset;
+        gap: 9px;
+        width: 100%;
+        overflow: hidden;
+
+        & p, & h4{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    &-plateCardPrice{   
+        @extend %flex-row;
+        align-items: flex-end;
+        padding-left: 7px;
+    }
+
+    &-checkBtn{
+        @extend %flex-row;
+        flex-shrink: 0;
+        width: 59px;
+        margin-right: -59px;
+        background: $secondary-item-background;
+        transition: margin-right 230ms ease-in-out;  
+    }
+
+    &-checkIcon{
+        @extend %flex-row;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: white;
+        color: $secondary-item-background;
+    }
+}   
+
+
+@keyframes appearing {
+    0% {
+        opacity:0 ;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity:1 ;
+        transform: translateY(0);
+    }
+}

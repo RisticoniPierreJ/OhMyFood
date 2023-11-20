@@ -9,7 +9,6 @@
         color: transparent;
 
         &::before{
-            color: transparent;
             background-clip: text;
             -webkit-background-clip: text;
             background-image: $heart-gradient;
