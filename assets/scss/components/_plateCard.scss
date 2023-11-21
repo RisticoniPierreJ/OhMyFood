@@ -29,6 +29,7 @@
         }
     }
 
+    /***** Plate Cards content *****/ 
     &-plateCardContent{
         @extend %flex-row;
         align-items: unset;
@@ -58,6 +59,7 @@
         padding-left: 7px;
     }
 
+    /***** Check Button*****/ 
     &-checkBtn{
         @extend %flex-row;
         flex-shrink: 0;

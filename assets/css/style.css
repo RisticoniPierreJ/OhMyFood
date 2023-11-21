@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/***** Placeholders Flex *****/
 .menu__category, .menu, .pageContainerMenu, .restaurants__Cards, .restaurants, .fonctionnementAllCards, .fonctionnement, .infoGroup, .pageContainer, .footer ul, .footer, .header, .card__contentTxt, .card, .menu__item-plateCardDescription, .menu__item-allCards {
   display: flex;
   flex-direction: column;
@@ -203,12 +203,9 @@ h3, p {
   position: absolute;
   z-index: -1;
   border-radius: 25px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   opacity: 0;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
+  background: linear-gradient(352deg, #a16be0 -11%, #ff93e1 123%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   transition: opacity 300ms;
 }
@@ -216,6 +213,7 @@ h3, p {
   opacity: 1;
 }
 
+/***** Menu Page Button *****/
 .btnMenu {
   padding: 16px 50px;
 }
@@ -240,6 +238,7 @@ h3, p {
   opacity: 1;
 }
 
+/***** Loader transparent Background  *****/
 .backgroundLoader {
   position: fixed;
   width: 100vw;
@@ -250,6 +249,7 @@ h3, p {
   animation: disapear 0.7s 1.5s forwards;
 }
 
+/***** Ellipsis Loader *****/
 .laoderContainer {
   position: fixed;
   inset: 0;
@@ -302,6 +302,10 @@ h3, p {
     transform: scale(0);
     border-radius: 50%;
   }
+}
+.menu__item {
+  /***** Plate Cards content *****/
+  /***** Check Button*****/
 }
 .menu__item-allCards {
   align-items: unset;
@@ -383,6 +387,7 @@ h3, p {
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  /***** Restaurants cards content *****/
 }
 .card img {
   border-radius: 15px 15px 0 0;
@@ -439,6 +444,7 @@ input:focus {
   outline: none;
 }
 
+/***** Header Restaurants Menu *****/
 .headerMenu {
   justify-content: flex-start;
   padding: 23px 17px 14px 17px;
@@ -468,6 +474,12 @@ input:focus {
     justify-content: unset;
   }
 }
+@media (min-width: 1025px) {
+  .footer__title {
+    padding-right: 40px;
+    padding-left: 70px;
+  }
+}
 .footer ul {
   align-items: unset;
   gap: 7px;
@@ -489,13 +501,8 @@ input:focus {
 .footer__icon2 {
   margin-right: 5px;
 }
-@media (min-width: 1025px) {
-  .footer__title {
-    padding-right: 40px;
-    padding-left: 70px;
-  }
-}
 
+/***** Footer Restaurants Menu *****/
 .footerMenu {
   position: relative;
   top: 220px;
@@ -521,6 +528,7 @@ input:focus {
   padding: 0 17px;
 }
 
+/***** Section Fonctionnement  *****/
 .fonctionnement {
   align-items: unset;
   width: 100%;
@@ -578,7 +586,7 @@ input:focus {
   gap: 17px;
 }
 
-/* Couleurs des icones de la section Fonctionnement */
+/* Icon Colors section Fonctionnement */
 .iconColorMain {
   color: #7E7E7E;
 }
@@ -587,6 +595,8 @@ input:focus {
   color: #9356DC;
 }
 
+/***** End Section Fonctionnement  *****/
+/***** Section restaurants  *****/
 .restaurants {
   align-items: unset;
   gap: 26px;
@@ -676,7 +686,7 @@ input:focus {
   align-items: unset;
   width: 100%;
   gap: 12px;
-  /* pour surligner le titre des catégories */
+  /* Padding Bottom Category Title */
 }
 .menu__category-title:after {
   content: "";

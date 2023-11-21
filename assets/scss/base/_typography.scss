@@ -18,7 +18,7 @@ h3, p{
     font-size: 1.125rem;
 }
 
-// ***************** Cas Particulier ***************** //
+// ***************** Special Cases ***************** //
 
 /* SearchBar */
 ::placeholder {
@@ -45,7 +45,7 @@ h3, p{
     }
 }
 
-// ******* Page Accueil ******* //
+// ******* Homepage ******* //
 
 .infoGroup__title{
     @media (min-width: 1025px) {
@@ -84,7 +84,7 @@ h3, p{
 }
 
 
-// ******* Page Restaurants ******* //
+// ******* Restaurants Page ******* //
 
 .menu{
     &__title{

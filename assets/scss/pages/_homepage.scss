@@ -20,6 +20,7 @@
 
 }
 
+/***** Section Fonctionnement  *****/ 
 .fonctionnement{
     @extend %flex-column;
     align-items: unset;
@@ -80,7 +81,7 @@
     }
 }
 
-/* Couleurs des icones de la section Fonctionnement */
+/* Icon Colors section Fonctionnement */
 .iconColorMain{
     color: $icon-color-main;
 }
@@ -89,6 +90,10 @@
     color: $icon-color-secondary;
 }
 
+/***** End Section Fonctionnement  *****/ 
+
+
+/***** Section restaurants  *****/ 
 .restaurants{
     @extend %flex-column;
     align-items: unset;

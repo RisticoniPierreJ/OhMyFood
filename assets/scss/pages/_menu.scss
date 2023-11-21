@@ -59,7 +59,7 @@
         width: 100%;
         gap: 12px;
 
-        /* pour surligner le titre des catégories */
+        /* Padding Bottom Category Title */
         &-title:after {
             content: ""; 
             display: block; 

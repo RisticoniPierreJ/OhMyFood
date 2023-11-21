@@ -1,6 +1,6 @@
-//********** couleurs **********//
+//********** Colors **********//
 
-// Main
+// Backgrounds
 $background-main : #F6F6F6;
 $background-secondary : #EAEAEA;
 $background-dark : #353535;
@@ -23,11 +23,9 @@ $txt-price : #353535;
 $txt-light : #FFFFFF;
 $txt-dark : #000000;
 
-//Gradiants 
-
-$item-gradient-light: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%),
-linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);                          
+//Gradients 
 $item-gradient-dark: linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
+$item-gradient-light: linear-gradient(352deg, lighten(#9356DC,5%) -11%, lighten(#FF79DA,5%) 123%);  
 $heart-gradient: linear-gradient(180deg, #9356DC -11%, #FF79DA 123%);
 
 // Loader 
