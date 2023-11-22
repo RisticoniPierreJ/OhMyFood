@@ -1,4 +1,5 @@
-
+/********************************************** Homepage ************************************************/
+/*********************************************************************************************************/
 .pageContainer{
     @extend %flex-column;
 }
@@ -81,7 +82,7 @@
     }
 }
 
-/* Icon Colors section Fonctionnement */
+/***** Icon Colors section Fonctionnement *****/
 .iconColorMain{
     color: $icon-color-main;
 }
@@ -89,9 +90,6 @@
 .iconColorSecondary{
     color: $icon-color-secondary;
 }
-
-/***** End Section Fonctionnement  *****/ 
-
 
 /***** Section restaurants  *****/ 
 .restaurants{

@@ -1,21 +1,21 @@
-//********** Colors **********//
+//************ Colors ************//
 
-// Backgrounds
+// Backgrounds //
 $background-main : #F6F6F6;
 $background-secondary : #EAEAEA;
 $background-dark : #353535;
 $background-light : white;
 
-// item
+// item //
 $main-item-background : #9356DC;
 $secondary-item-background : #99E2D0;
 
-// icon
+// icon //
 $icon-color-main : #7E7E7E;
 $icon-color-secondary : #9356DC;
 $icon-color-dark : #353535;
 
-// Text
+// Text //
 $txt-custom : #008766;
 $txt-border : #99E2D0;
 $txt-search-input : #353535;
@@ -23,17 +23,13 @@ $txt-price : #353535;
 $txt-light : #FFFFFF;
 $txt-dark : #000000;
 
-//Gradients 
+// Gradients //
 $item-gradient-dark: linear-gradient(352deg, #9356DC -11%, #FF79DA 123%);
 $item-gradient-light: linear-gradient(352deg, lighten(#9356DC,5%) -11%, lighten(#FF79DA,5%) 123%);  
 $heart-gradient: linear-gradient(180deg, #9356DC -11%, #FF79DA 123%);
 
-// Loader 
+// Loader //
 
 $dot-1 : #9356DC;
 $dot-2 : #c867db;
 $dot-3 : #FF79DA;
-
-//********** Utils Position Dimension **********//
-
-
