@@ -26,10 +26,3 @@
 
 }
 
-input:checked + label{
-    
-    &>.heartIcon__full::before{
-        opacity: 1;
-
-    }
-}
