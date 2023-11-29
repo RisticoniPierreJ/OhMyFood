@@ -21,5 +21,15 @@
         &:hover::before{
             opacity: 1;
         }
+
+    }
+
+}
+
+input:checked + label{
+    
+    &>.heartIcon__full::before{
+        opacity: 1;
+
     }
 }

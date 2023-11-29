@@ -251,6 +251,10 @@ h3, p {
   opacity: 1;
 }
 
+input:checked + label > .heartIcon__full::before {
+  opacity: 1;
+}
+
 /********************************************** Loader ************************************************/
 /*********************************************************************************************************/
 /***** Loader transparent Background  *****/
@@ -261,7 +265,7 @@ h3, p {
   background: #F6F6F6;
   opacity: 0.7;
   z-index: 99;
-  animation: disapear 0.7s 1.5s forwards;
+  animation: disapear 0.5s 1.5s forwards;
 }
 
 /***** Ellipsis Loader *****/
@@ -269,7 +273,7 @@ h3, p {
   position: fixed;
   inset: 0;
   z-index: 99;
-  animation: disapear 0.7s 1.5s forwards;
+  animation: disapear 0.5s 1.5s forwards;
 }
 
 .dot {
@@ -314,8 +318,7 @@ h3, p {
 @keyframes disapear {
   100% {
     opacity: 0;
-    transform: scale(0);
-    border-radius: 50%;
+    z-index: -2;
   }
 }
 /********************************************** Plate Cars ************************************************/
